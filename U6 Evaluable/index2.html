@@ -9,7 +9,44 @@
 </head>
 
 <body>
-    <h1>hola</h1>
+    <h2 id="hola">Hola</h2>
+    <button id="Comprar">Comprar</button>
+    <ul>
+        <li class="js-target">Unchanged</li>
+        <li class="js-target">Unchanged</li>
+        <li>Won't Change</li>
+        <li class="js-target">Unchanged</li>
+        <li>Won't Change</li>
+        <li class="js-target">Unchanged</li>
+      </ul> 
+    <script>
+        const me = {
+            name: {
+                first: "Brian",
+                last: "Holt",
+            },
+            location: {
+                streetNumber: 500,
+                street: "Fakestreet",
+                city: "Seattle",
+                state: "WA",
+                zipCode: 55555,
+                country: "USA",
+            }
+        }
+        function printLocation() {
+            return `${me.location.street} ${me.location.streetNumber}`
+        }
+        console.log(printLocation());
+        console.log(me.location.streetNumber, me.location.street);
+        let elemento = document.getElementById("#hola")
+//elemento.style.backgroundColor = "red";
+const botonComprar = document.querySelector("#Comprar")
+botonComprar.addEventListener("click", function () {
+  alert("Hey there!");
+});
+
+    </script>
 </body>
 
 </html>
