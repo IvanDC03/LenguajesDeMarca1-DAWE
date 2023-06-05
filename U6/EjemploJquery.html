@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo Jquery</title>
+</head>
+<body>
+    <h1>Mi contenido HTML</h1>
+    <p id="p1">Texto para el parrafo 1</p>
+    <div>
+<p>Otro texto para el segundo parrafo</p>
+<input type="text" name="info" id="info" placeholder="pon algo...">
+<button id="but1">Accion</button> Hace toggle y guarda info
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script>
+$('#but1').click(function() {$('p').fadeToggle(3000); xdatos(); });
+$('body').css('background-color','light-blue');
+$('p').css('background-color','blue');
+$('div').css({'background-color':'yellow','padding': '5px'});
+
+$('#p1').hover(function() {$(this).css("background-color","orange");},
+function(){$(this).css("background-color","red");})
+
+function ponVerde(){
+    $(this).css("background-color","red");
+}
+function xdatos(){
+infoS=localStorage.getItem("datos");
+if(infoS!=null){
+    console.log(infoS);
+    obJs=JSON.parse(infoS);
+    console.log(obJs);
+}
+else{
+    console.log("No esxiste la clave 'datos'");
+    obJs={e:"un texto",b:[1,2,3],c:false,d:{a:2,b:"hello"}};
+    console.log(obJs);
+}
+obJs.a=$('#info').val();
+localStorage.setItem("datos",JSON.stringify(obJs));
+}
+
+</script>
+
+</body>
+</html>

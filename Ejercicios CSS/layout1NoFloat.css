@@ -1,0 +1,265 @@
+/* ---- Estilos básicos ---------------------------------------------------- */
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #9fa9c9;
+    font: 70%/160% "verdana", sans-serif;
+    color: #192666;
+  }
+  
+  a {
+    color:#192666;
+  }
+  a:hover {
+    color:#4F6AD7;
+  }
+  
+  p {
+    margin: 1em 0;
+    padding: 0;
+  }
+  
+  
+  h1, h2, h3, h4, h5 {
+    margin: 1em 0;
+    padding:0;
+  }
+  
+  h1 {
+    font-size: 260%;
+    font-family: "georgia", serif;
+    font-weight: normal;
+  }
+  
+  h2 {
+    font-size:180%;
+    font-family: "georgia", serif;
+    font-weight:normal;
+  }
+  
+  h3 {
+    font-size:120%;
+    font-weight:bold;
+  }
+  
+  ul, ol {
+    margin: 1em 0 1em 2em;
+    padding:0;
+  }
+  
+  /* ---- Layout ------------------------------------------------------------- */
+  
+  #contenedor {
+    width:770px;
+    margin: 50px auto 0 auto;
+  }
+  
+  #cabecera {
+    width: 770px;
+    position: relative;
+    height: 100px;
+    margin: 0;
+    padding: 0;
+    background: #233C9B url("http://dummyimage.com/200x20/66A/440.gif&text=Cabecera") no-repeat;
+    color: #FFF;
+  }
+  
+  #contenido {
+    width: 760px;
+    margin: 0 5px;
+    background: #FFF;
+  }
+  
+  #contenido #principal {
+    display: inline-block;
+    vertical-align: top;
+    width: 530px;
+    margin-top: 15px;
+    padding:0 0 0 20px;
+    background: #FFF;
+  }
+  
+  #contenido #secundario {
+    display: inline-block;
+    width: 200px;
+    margin: 15px 0 0 0;
+    padding: 0;
+    background: #CEDBF9 url("http://dummyimage.com/200x20/66A/440.gif&text=Lateral") no-repeat;
+  }
+  
+  #pie {
+    
+    height: 60px;
+    margin-bottom: 50px;
+    background: url("http://dummyimage.com/770x60/66A/440.gif&text=Pie") no-repeat;
+    color: #6685CC;
+    position: relative;
+  }
+  
+  /* ---- Cabecera ----------------------------------------------------------- */
+  #cabecera #logo {
+    position: absolute;
+    top: 35px;
+    left: 35px;
+    margin: 0;
+  }
+  
+  #cabecera #logo a {
+    color: #FFF;
+    display: block;
+    line-height: 35px;
+  }
+  
+  #cabecera #logo a:hover {
+    color: #B5C4E3;
+    text-decoration: underline;
+  }
+  
+  #cabecera #buscador {
+    position: absolute;
+    top: 40px;
+    right: 20px;
+  }
+  
+  #cabecera #buscador legend {
+    display: none;
+  }
+  
+  #cabecera #buscador fieldset {
+    border: none;
+  }
+  
+  /* ---- Menú --------------------------------------------------------------- */
+  #menu {
+    background: #192666;
+    margin: 0 5px;
+    padding: 10px 0 0 0;
+  }
+  
+  #menu ul {
+    margin: 0 10px;
+    padding: 0;
+    list-style:none;
+  }
+  
+  #menu ul li {
+    display: inline-block;
+    margin: 0 5px 0 0;
+    padding: 0;
+    
+  }
+  
+  #menu ul li a {
+    display: block;
+    position: relative;
+    padding: 5px 15px;
+    border: 0;
+    background: #253575;
+    color: #B5C4E3;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  #menu ul li a:hover {
+    background: #31479B;
+  }
+  
+  #menu ul li.seleccionado a {
+    background: #FFF;
+    color: #FF9000;
+  }
+  
+  /* ---- Contenidos --------------------------------------------------------- */
+  #contenido .articulo {
+    
+    margin: 0;
+    padding: 20px;
+    background: url("http://dummyimage.com/550x20/AAF/440.gif&text=Articulo") no-repeat;
+  }
+  
+  #contenido .articulo h2 {
+    margin: 0 -20px;
+    padding: 10px;
+    background: #DEE5FD;
+    color: #192666;
+  }
+  
+  
+  #contenido .info {
+    margin: 10px 0;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #DEE5FD;
+    color:#6685CC;
+  }
+  
+  #contenido .info a { color:#6685CC; }
+  #contenido .info a:hover { color:#FF9000; }
+  
+  #contenido .info span.fecha, #contenido .info span.categoria, #contenido .info span.autor, #contenido .info span.comentarios {
+    padding-left:15px;
+  }
+  
+  #contenido .info span.fecha { background: url("http://dummyimage.com/10x16/A6A/480.gif&text=-") 0 50% no-repeat; }
+  #contenido .info span.categoria { background: url("http://dummyimage.com/10x16/A6A/480.gif&text=-") 0 50% no-repeat; margin-left: 8px; }
+  #contenido .info span.autor { background: url("http://dummyimage.com/10x16/A6A/480.gif&text=-") 0 50% no-repeat; margin-left: 8px; }
+  #contenido .info span.comentarios { background: url("http://dummyimage.com/10x16/A6A/480.gif&text=-") 0 50% no-repeat; margin-left: 8px; }
+  
+  #contenido #secundario h3 {
+    padding: 10px 0 10px 10px;
+    margin-top: 20px;
+    background: #A0B9F3;
+    color: #192666;
+  }
+  
+  #contenido #secundario #sobremi img {
+    
+    margin: 4px 5px 0 0;
+  }
+  
+  #contenido #secundario #sobremi p {
+    display: inline-block;
+  }
+  
+  #contenido #secundario div {
+    padding: 0 10px;
+  }
+  
+  #contenido #secundario ul {
+    margin: 15px 0;
+    padding: 0;
+    list-style:none;
+  }
+  
+  #contenido #secundario li {
+    margin: 0;
+    padding: 0;
+    border-bottom: 1px solid #E0E8FA;
+  }
+  
+  #contenido #secundario li a {
+    display: block;
+    padding: 3px 0 3px 22px;
+    background: url("http://dummyimage.com/10x16/A6A/480.gif&text=-") 8px no-repeat;
+    text-decoration: none;
+  }
+  
+  #contenido #secundario li a:hover {
+    background-color: #E0E8FA;
+    color: #192666;
+  }
+  
+  #contenido #secundario li.seleccionado a {
+    background: #E0E8FA url("http://dummyimage.com/10x16/6AA/480.gif&text=-") 8px no-repeat;
+    font-weight: bold;
+  }
+  
+  /* ---- Pie ---------------------------------------------------------------- */
+  #pie p {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 10px;
+    left: 40px;
+  }

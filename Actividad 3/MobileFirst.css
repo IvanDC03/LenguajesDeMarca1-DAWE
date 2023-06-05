@@ -1,0 +1,12 @@
+body{
+    background-color: black;
+    font-size: 15px;
+    font-weight: 100;
+    font-style: normal;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    @media screen (min-width: 400px) {
+        body{
+            background-color: white;
+        }
+    }
+}

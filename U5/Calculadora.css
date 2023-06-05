@@ -1,0 +1,39 @@
+h1{
+    text-align: center;
+    color: red;
+    font-size: 45px;
+    font-weight: 100;
+    font-style: normal;
+    font-family: 'Times New Roman', Times, serif;
+}
+h2{
+    text-align: center;
+    color: blue;
+    font-size: 30px;
+    font-weight: 100;
+    font-style: normal;
+    font-family: 'Times New Roman', Times, serif;
+}
+h3{
+    text-align: -25px;
+    color: blue;
+    font-size: 30px;
+    font-weight: 100;
+    font-style: normal;
+    font-family: 'Times New Roman', Times, serif;
+}
+@media screen and (min-width: 1024px) {
+    article {
+      padding: 1rem 3rem;
+    }
+  }
+    @media screen and (min-width: 768px) {
+      article {
+        display: flex;
+      }
+    }
+    @media screen and (min-width: 568px) {
+        article {
+          display: flex;
+        }
+      }

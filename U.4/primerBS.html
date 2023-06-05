@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+<head>
+    <meta charset="UTF-8">    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script> 
+
+</head>
+<body class="container vh-100 d-flex flex-column justify-content-evenly">   <!-- cambiar a container-fluid -->
+    <div class="row bg-primary flex-grow-1 order-0 order-lg-3">             <!-- ver como cambia el orden al cambiar tamaño -->
+        <div class="col bg-info m-2">1</div>
+        <div class="col bg-info m-2">2</div>
+        <div class="col bg-info m-2">3</div>
+        <div class="col bg-info m-2">4</div>
+    </div>
+    <div class="row bg-secondary flex-grow-1">
+        <div class="col-3 border border-danger bg-warning text-end">5</div>
+        <div class="col-2 border rounded-3 border-danger bg-warning text-end">6</div>
+        <div class="col-4 border rounded border-danger bg-warning text-end">7</div>
+        <div class="col-3 border border-danger bg-warning text-end">8</div>
+    </div>    
+    <div class="row bg-secondary flex-grow-1 order-1">
+        <div class="col-3 bg-warning-subtle m-1">5</div>
+        <div class="col-2 bg-primary-subtle m-1">6</div>
+        <div class="col-4 bg-danger-subtle m-1">7</div>
+        <div class="col-2 bg-success-subtle m-1">8</div>
+    </div>
+    <div class="row bg-success flex-grow-1">
+        <div class="text-info bg-danger bg-opacity-50 my-1 mx-0">9</div>
+        <div class="text-info fw-bold fs-1 col bg-danger bg-opacity-50 my-1 mx-1 text-center">10</div>
+        <div class="text-info col bg-danger bg-opacity-50 my-1 mx-1 d-flex align-items-center justify-content-center">11</div>
+        <div class="invisible text-info bg-danger bg-opacity-50 my-1 mx-2">12</div>
+        <div class=" text-info bg-danger bg-opacity-50 my-1 mx-3">13</div>
+    </div>
+</body>
+</html>

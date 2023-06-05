@@ -1,0 +1,18 @@
+.top{
+background-color: red;
+width: 12%;
+padding: 15%;
+position: left;
+}
+.main{
+background-color: blue;
+width: 16%;
+padding-left: 12%;
+position: right;
+}
+.down{
+padding: 20%;
+background-color: aqua;
+width: 15%;
+position: absolute;
+}

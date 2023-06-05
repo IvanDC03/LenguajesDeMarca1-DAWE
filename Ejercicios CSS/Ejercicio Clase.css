@@ -1,0 +1,25 @@
+
+#container{
+   font-size:medium;
+   background-color: aqua;  
+   height: 100px;
+   position: relative;
+   margin: 30%;
+   width: 500px;
+   border: 4px;
+   padding-right: 10%;
+   display: inline-block; 
+}
+
+#top{
+    font-size:medium;  
+    height: 100px;
+    position: relative;
+    margin: 15%;
+    width: 200px;
+    border: 2px;
+    padding-right: 15%;
+    display: inline-block;
+    background-color: red; 
+
+}

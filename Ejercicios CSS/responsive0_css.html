@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2 Layout A</title>
+    <link rel="stylesheet" type="text/css" href="Ejercicio Clase.css">
+    <style>        
+        body {
+            margin:0 10px;
+            height:100vh; }
+
+        #container { 
+            height:100%; }
+                     
+        #top { 
+            background-color: lightcoral;
+            display:block;
+            height:15vh}
+
+        #main { 
+            background-color: rgb(227, 245, 255);
+            display:block;
+            height:70%; }
+
+        
+        #main-iz {  
+            display:inline-block;
+            background-color: rgb(76, 158, 209);
+            vertical-align: top;
+            width:20%;
+            height: 100%; }
+
+        #main-iz ul{
+            list-style:none; /* Eliminamos los bullets */
+            background-color:#7b8eca; }
+        #main-iz ul li {
+            padding:10px; }
+
+        #main-iz ul li:hover{
+            background-color:#6778ad; }              
+            
+        #main-der { 
+            display:inline-block;
+            width:70%;}
+            
+        #main-der p { padding: 20px;}
+        
+        #foot { 
+            background-color: lightseagreen;
+            height:15vh; 
+            display:block; } 
+        
+        #foot * { display: inline-block;
+                  height:100%;
+                  vertical-align: middle; }
+
+        #foot p { display: inline; }
+
+        #columns { column-count: 2; 
+                    column-gap:3em; }                           
+
+        #centrar { text-align:center;}
+
+        p { text-align: justify; } 
+
+        li { border-radius: 20px; }
+
+        img { border-radius: 15px; }
+
+        #pagina {
+            width:18%;            
+            border:4px solid rgb(60, 157, 160);
+            border-radius: 0;
+            box-shadow: 10px 10px 10px  rgb(105, 159, 177);
+            float:left; 
+            margin-right: 20px;
+            margin-bottom: 20px;
+            transition:  width 1s, border-color 4s; 
+        }
+
+        #pagina:hover {
+            width:24%;
+            border-color:chocolate;
+        }
+ 
+/*      #oculto:hover {
+            width:40%;
+            height:15vh;
+            column-gap: 3em;
+            background-color: rgb(195, 219, 219);
+            overflow:visible;  visible|hidden|scroll|auto 
+        }*/
+
+    </style>
+
+</head>
+<body>
+    
+    <div id="container">
+            <div id="top">
+                <img src="http://dummyimage.com/30x30/A6A/8F8.jpg&text=logo">
+                <p>Info de Cabecera</p>
+            </div>
+            <div id="main">
+                <div id="main-iz">
+                    <ul>
+                        <li>Opción 1</li>
+                        <li>Opción 2</li>
+                        <li>Opción 3</li>
+                        <li>Opción 4</li>
+                    </ul>
+
+                </div>
+                <div id="main-der">
+                    <h2>¿Qué es Lorem Ipsum?</h2>
+                    <p><strong>Lorem Ipsum</strong> es simplemente el texto de relleno de las imprentas y archivos de texto.<br> Lorem Ipsum ha sido el texto de relleno estándar de las industrias 
+                        desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer 
+                        un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al 
+                        original. Fue popularizado en los 60s con la creación de las hojas "Letraset", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, 
+                        como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.
+                    </p>
+                    <hr>
+                    <img id="pagina" src="pagina.png" width="100" alt="Página Antigua">
+                    <h2 id="centrar">¿Por qué lo usamos?</h2>                    
+                    <p id="columns">Es un hecho establecido hace demasiado tiempo que un lector se distraerá con el contenido del texto de un sitio mientras que mira su diseño. El punto de usar Lorem Ipsum es 
+                        que tiene una distribución más o menos normal de las letras, al contrario de usar textos como por ejemplo "Contenido aquí, contenido aquí". Estos textos hacen parecerlo un 
+                        español que se puede leer. Muchos paquetes de autoedición y editores de páginas web usan el Lorem Ipsum como su texto por defecto, y al hacer una búsqueda de "Lorem Ipsum" 
+                        va a dar por resultado muchos sitios web que usan este texto si se encuentran en estado de desarrollo. Muchas versiones han evolucionado a través de los años, 
+                        algunas veces por accidente, otras veces a propósito (por ejemplo insertándole humor y cosas por el estilo).
+                    </p>
+                    <p id="oculto">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto 
+                        beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi 
+                        nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam 
+                        aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum
+                        iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</p>
+                </div>
+            </div>
+
+            <div id="foot">
+                <img src="http://dummyimage.com/200x200/6AA/840.jpg&text=logo">
+                <p>U-tad</p>
+                <p>2022</p>
+            </div>
+
+    </div>
+    
+</body>
+</html>

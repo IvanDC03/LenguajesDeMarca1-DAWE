@@ -1,0 +1,7 @@
+{
+    "git.ignoreLimitWarning": true,
+    "githubPullRequests.remotes": [
+        "main",
+        "https://github.com/IvanDC03/ProyectoRouting.git"
+    ]
+}

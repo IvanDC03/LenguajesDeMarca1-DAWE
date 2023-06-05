@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Firebase</title>
+</head>
+<body>
+    <button onclick="ponValor(doc,setDoc,collection)">Algo</button>
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.20.0/firebase-app.js";
+        import { getFirestore, collection, doc, setDoc } from "https://www.gstatic.com/firebasejs/9.20.0/firebase-firestore.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        //import { initializeApp } from "firebase/app";
+        // https://firebase.google.com/docs/web/setup#available-libraries
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+            apiKey: "AIzaSyCSO9rZ22Xwwvq57ujwnuKKbAipmfD6nSw",
+            authDomain: "ivandc-20188.firebaseapp.com",
+            projectId: "ivandc-20188",
+            storageBucket: "ivandc-20188.appspot.com",
+            messagingSenderId: "164300423815",
+            appId: "1:164300423815:web:aa9cb655383dd1b3262e22"
+        };
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const db = getFirestore(app);
+        const refcol = collection(db, 'Mi coleccion');
+        const aDocRef = doc(db, 'users', 'aturing');
+        async function ponValor(docref, contenido) {
+            await setDoc(docref, contenido)
+        }
+        window.ponValor = ponValor;
+        window.setDoc = setDoc;
+        window.doc = doc;
+        window.collection = collection;
+    </script>
+    <!--Arreglar esto y ver JSFetch-->
+</body>
+</html>

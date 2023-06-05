@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina</title>
+</head>
+<body>
+<h1>Primera pagina con JavaScript</h1>
+<p>Ahi va</p>
+<p>...hasta aqui</p>
+<h1>Estoy en una ventana</h1>
+<p id="elID">Con un contenido</p>
+<p>variado</p>
+<script>
+let a = 10;
+let b = "un texto";
+let c;
+document.write(`a: ${typeof a} ${a}  b: ${typeof b} ${b} c: ${typeof c} ${c})`)
+a=10
+b=9
+c=8
+d=7
+e=6
+f=5
+g=4
+h=3
+i=2
+j=1
+k=a*b*c*d*e*f*g*h*i*j
+window.alert(`El resultado es: ` + k)
+console.log(`hola`)
+document.write(k)
+let espanol=false;
+       let dias=[5,8,6,0,4];
+       let diasSemEsp=['lunes','martes','miércoles','jueves','viernes','sábado','domingo'];
+       let diasSemEng=['monday','tuesday','wednesday','thrusday','friday','saturday','sunday'];
+
+       for(i=0;i<dias.length;i++) {
+         if(dias[i]<1 || dias[i]>7)
+            texto="ERROR";
+         else if(espanol)
+                  texto=diasSemEsp[dias[i]-1];
+              else
+                  texto=diasSemEng[dias[i]-1];
+         document.write(`${i+1}ª fecha: (${dias[i]}) ${texto}<br>`)
+         console.warn("Sabado y Domingo");
+         
+         }
+         e=document.getElementById("elID")
+         e="Todo Ok";
+</script>
+
+</body>
+</html>
