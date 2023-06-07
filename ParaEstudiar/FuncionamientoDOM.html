@@ -11,6 +11,13 @@
 <body>
     <h2 id="hola">Hola</h2>
     <button id="Comprar">Comprar</button>
+    <div class="button-container">
+        <button>1</button>
+        <button>2</button>
+        <button>3</button>
+        <button>4</button>
+        <button>5</button>
+      </div> 
     <ul>
         <li class="js-target">Unchanged</li>
         <li class="js-target">Unchanged</li>
@@ -45,7 +52,11 @@ const botonComprar = document.querySelector("#Comprar")
 botonComprar.addEventListener("click", function () {
   alert("Hey there!");
 });
-
+document
+  .querySelector(".button-container")
+  .addEventListener("click", function (event) {
+  alert(`You clicked on button ${event.target.innerText}`);
+});
     </script>
 </body>
 
