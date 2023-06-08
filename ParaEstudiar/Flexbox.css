@@ -1,0 +1,30 @@
+body {
+    height: 100vh;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+.box-1 {
+    height: 300px;
+    background-color: green;
+    width: 50px;
+    flex-grow: 1;
+}
+
+.box-2 {
+    flex-grow: 1;
+    height: 300px;
+    background-color: blue;
+    width: 50px;
+}
+
+.box-3 {
+    flex-grow: 1;
+    height: 300px;
+    background-color: red;
+    width: 50px;
+}
