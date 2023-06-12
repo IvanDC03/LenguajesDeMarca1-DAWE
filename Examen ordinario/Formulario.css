@@ -1,0 +1,9 @@
+body {
+    background-image: url("https://i.blogs.es/806d5a/oscars-peliculas-en-streaming/1366_2000.jpeg");
+    height: 60px;
+}
+
+.mb-3 {
+    background-color: blue;
+    color: black;
+}
